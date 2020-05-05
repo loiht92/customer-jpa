@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th>
+<head>
+    <meta charset="UTF-8">
+    <title>View Customers</title>
+</head>
+<body>
+<a href="/customers">List Customers</a>
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td th:text="${customer.getFirstName()}"></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td th:text="${customer.getLastName()}"></td>
+    </tr>
+</table>
+</body>
+</html>
